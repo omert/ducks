@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+$url = 'www.nhl.com/';
+$remotePath = 'nhlstats/'; 
+$pageBase = 'app?service=page\&page=Stats\&fetchKey=20082XXXAATAll\&viewName=gameSummary\&sort=game.gameDate\&pg=';
+$localDir = 'data';
+@nhlTeams = ('ANA', 'ATL', 'BOS', 'BUF', 'CLB', 'CAR', 'CAL', 'CHI', 'COL', 'DAL', 'DET', 'EDM', 'FLO', 'LOS', 'MIN', 'MON', 'NJD', 'NAS', 'NYI', 'NYR', 'OTT', 'PHI', 'PHO', 'PIT', 'SAN', 'STL', 'TAM', 'TOR', 'VAN', 'WAS');
+print "downloading ".@nhlTeams." teams times three pages\n";
+foreach $team (@nhlTeams){
+    for (my $i = 1; $i < 4;  ++$i){
+        $page = $pageBase;
+        $page =~ s/XXX/$team/;
+        system "wget $url$remotePath$page$i -P $localDir";
+    }
+}
+

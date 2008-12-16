@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+$url = 'http://www.nhl.com/ice/app?service=page&page=gamestats&fetchKey=20092ALLAATAll&viewName=gameSummary&sort=game.gameDate&pg=XXX';
+$localDir = 'data';
+system "rm $localDir/app*";
+
+$numpages = 30;             
+for (my $i = 1; $i <= $numpages; ++$i){
+    $page = $url;
+    $page =~ s/XXX/$i/;
+    $command = "wget \"$page\" -P $localDir"; 
+    print "running: $command\n";
+    system "$command";
+} 
+

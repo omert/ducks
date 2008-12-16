@@ -1,0 +1,38 @@
+#!/usr/bin/perl
+
+open(tableFile, ">data/stats.txt");
+
+%monthNum = qw( Jan 01 Feb 02 Mar 03 Apr 04 May 05 Jun 06 Jul 07 Aug 08 Sep 09 Oct 10 Nov 11 Dec 12 );
+
+@files = <data/*>;
+foreach $file (@files){
+    open(htmlFile, $file);
+    @fileLines = <htmlFile>;
+    close(htmlFile);
+    $inTR = 0;
+    foreach $line (@fileLines){
+        if ($line =~ /<tr /){
+            $inTR = 1;
+            @tableLine = ();
+        }
+        elsif ($line =~ /<\/tr>/){
+            if (@tableLine >= 9 && $tableLine[4] eq 'H'){
+                $homeTeam = $tableLine[1];
+                $awayTeam = $tableLine[5];
+                $homeGoals = $tableLine[7];
+                $awayGoals = $tableLine[8];
+                $gameDate = $tableLine[0];
+                $gameDate =~ s/(\S+)\s(\S+)\s'(\S+)/20$3-$monthNum{$1}-$2/;
+                @tableLine = ();
+                print tableFile "$gameDate,$homeTeam,$awayTeam,$homeGoals,$awayGoals\n";
+            }
+            $inTR = 0;
+        }
+        if ($inTR && $line =~ /<td /){
+            $line =~ s/^\s*//g;
+            $line =~ s/<.*?>//g;
+            chop $line;
+            push(@tableLine, $line);
+        }
+    }
+}

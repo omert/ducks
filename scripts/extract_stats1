@@ -1,0 +1,70 @@
+#!/usr/bin/perl
+
+open(tableFile, ">data/stats.txt");
+
+%monthNum = qw( Jan 01 Feb 02 Mar 03 Apr 04 May 05 Jun 06 Jul 07 Aug 08 Sep 09 Oct 10 Nov 11 Dec 12 );
+
+@files = <data/*>;
+foreach $file (@files){
+    open(htmlFile, $file);
+    @fileLines = <htmlFile>;
+    close(htmlFile);
+    $inTable = 0;
+    $trDepth = 0;
+    @tableLine;
+    $tableColumn = 0;
+    foreach $line (@fileLines){
+        if ($line =~ /stats rows/){
+            $inTable = 1;
+        }
+        if ($inTable){
+            if ($line =~ /<tr>/){
+                $tableColumn = 0;
+                @tableLine = ();
+                ++$trDepth;
+            }
+            if ($line =~ /<\/tr>/){
+                --$trDepth;
+                $homeTeam = $tableLine[2];
+                $otso = $tableLine[4];  #overtime shootout
+                $home = $tableLine[5];  #home or away
+                $awayTeam = $tableLine[6];
+                $homeGoals = $tableLine[8];
+                $awayGoals = $tableLine[9];
+                if ($otso eq "OT"){
+                    $homeGoals = $awayGoals = 
+                        $homeGoals > $awayGoals ? $awayGoals : $homeGoals;
+                }
+                $gameDate = $tableLine[1];
+                $gameDate =~ s/<(.*?)>//;
+                $gameDate =~ s/<(.*?)>//;
+                $gameDate =~ s/(\S+)\s(\S+)\s'(\S+)/20$3-$monthNum{$1}-$2/;
+                @tableLine = ();
+                if ($home eq "H"){
+                    print tableFile "$gameDate,$homeTeam,$awayTeam,";
+                    print tableFile "$homeGoals,$awayGoals\n";
+                }
+            }
+            if ($trDepth == -1){
+                $inTable = 0;
+            }
+        }
+        if ($inTable){
+            if (!($line =~ /<td/) && !($line =~ /<\/td/)
+                && !($line =~ /<font/) && !($line =~ /<\/font/)
+                && !($line =~ /<tr/) && !($line =~ /<\/tr/)
+                && !($line =~ /^\s*$/))
+            {
+                $lineData = $line;
+                $lineData =~ s/^\s+//;
+                $lineData =~ s/\s+$//;
+                @tableLine[$tableColumn] = $lineData;
+#                print "$lineData ";    
+            }
+            if ($line =~ /<td/){
+                ++$tableColumn;
+            }       
+        }
+    }
+}
+            
