@@ -1,0 +1,46 @@
+--------------------------------------
+Summary
+Max budget: 100
+Max risk: 50
+Portfolio size: 82.2
+Portfolio expected return: 8.44
+Portfolio risk: 50
+Portfolio Sharpe ratio: 0.169
+
+
+CHI vs. CBJ:  38.27/82.24 on home
+ANA vs. MIN:  18.39/82.24 on away
+VAN vs. FLA:  25.58/82.24 on home
+
+--------------------------------------
+Detail
+CHI vs. CBJ
+                          home      draw      away
+bookie odds:              1.77       4.3       3.8
+calculated odds:          1.62      5.02       5.5
+sharpe ratios:           0.111         0         0
+put 38.27/82.24 on home
+Expected return: 3.65
+Risk: 32.9
+
+
+ANA vs. MIN
+                          home      draw      away
+bookie odds:               1.9      4.25       3.3
+calculated odds:          2.66      3.64      2.86
+sharpe ratios:               0    0.0877    0.0977
+put 18.39/82.24 on away
+Expected return: 2.83
+Risk: 28.9
+
+
+VAN vs. FLA
+                          home      draw      away
+bookie odds:               1.9      4.25      3.45
+calculated odds:          1.76      4.23      5.07
+sharpe ratios:          0.0813   0.00211         0
+put 25.58/82.24 on home
+Expected return: 1.96
+Risk: 24.1
+
+

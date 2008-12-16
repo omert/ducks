@@ -1,0 +1,37 @@
+--------------------------------------
+Summary
+Max budget: 100
+Max risk: 50
+Portfolio size: -0.356
+Portfolio expected return: -0.00246
+Portfolio risk: 0.639
+Portfolio Sharpe ratio: 0.00385
+
+
+DET vs. COL:  -0/-0.3562 on away
+LAK vs. SJS:  -0.3562/-0.3562 on draw
+
+--------------------------------------
+Detail
+DET vs. COL
+                          home      draw      away
+bookie odds:               1.7       4.5       4.3 Margin: 96%
+normalized:                1.8       4.7       4.5
+calculated odds:          1.77       4.8      4.41
+sharpe ratios:               0         0         0
+put -0/-0.3562 on away
+Expected return: -0
+Risk: -0
+
+
+LAK vs. SJS
+                          home      draw      away
+bookie odds:               3.3       4.2       1.9 Margin: 94%
+normalized:                3.5       4.5         2
+calculated odds:          3.93      4.17      1.98
+sharpe ratios:               0   0.00385         0
+put -0.3562/-0.3562 on draw
+Expected return: -0.00246
+Risk: -0.639
+
+

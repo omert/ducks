@@ -1,0 +1,145 @@
+--------------------------------------
+Summary
+Max budget: 100
+Max risk: 50
+Portfolio size: 94
+Portfolio expected return: 17.5
+Portfolio risk: 50
+Portfolio Sharpe ratio: 0.351
+
+
+BUF vs. BOS:  26.21/94.03 on away
+CAR vs. PHI:  6.054/94.03 on away
+CBJ vs. PHX:  0/94.03 on away
+NYI vs. PIT:  0/94.03 on away
+WSH vs. ATL:  4.159/94.03 on home
+DET vs. MTL:  14.52/94.03 on home
+FLA vs. NJD:  3.487/94.03 on away
+TBL vs. NYR:  5.968/94.03 on draw
+MIN vs. DAL:  18.6/94.03 on home
+COL vs. STL:  14.71/94.03 on away
+EDM vs. LAK:  0.33/94.03 on draw
+SJS vs. CHI:  0/94.03 on away
+
+--------------------------------------
+Detail
+BUF vs. BOS
+                          home      draw      away
+bookie odds:               2.4      4.15       2.6
+calculated odds:          4.64      4.34      1.98
+sharpe ratios:               0         0     0.239
+put 26.21/94.03 on away
+Expected return: 8.15
+Risk: 34.1
+
+
+CAR vs. PHI
+                          home      draw      away
+bookie odds:              2.33       4.1       2.6
+calculated odds:          3.19      4.44      2.43
+sharpe ratios:               0         0    0.0544
+put 6.054/94.03 on away
+Expected return: 0.421
+Risk: 7.75
+
+
+CBJ vs. PHX
+                          home      draw      away
+bookie odds:               2.2       4.2      2.75
+calculated odds:          2.82      4.25      2.78
+sharpe ratios:               0         0         0
+put 0/94.03 on away
+Expected return: 0
+Risk: 0
+
+
+NYI vs. PIT
+                          home      draw      away
+bookie odds:              3.05       4.2      2.05
+calculated odds:          3.72      4.36      2.21
+sharpe ratios:               0         0         0
+put 0/94.03 on away
+Expected return: 0
+Risk: 0
+
+
+WSH vs. ATL
+                          home      draw      away
+bookie odds:              1.93      4.15      3.25
+calculated odds:          1.88      5.12      4.49
+sharpe ratios:          0.0281         0         0
+put 4.159/94.03 on home
+Expected return: 0.113
+Risk: 4
+
+
+DET vs. MTL
+                          home      draw      away
+bookie odds:              1.87       4.2      3.45
+calculated odds:          1.72      5.21      5.65
+sharpe ratios:           0.094         0         0
+put 14.52/94.03 on home
+Expected return: 1.26
+Risk: 13.4
+
+
+FLA vs. NJD
+                          home      draw      away
+bookie odds:              2.44      4.15       2.5
+calculated odds:           3.5      4.01      2.41
+sharpe ratios:               0    0.0188    0.0301
+put 3.487/94.03 on away
+Expected return: 0.129
+Risk: 4.3
+
+
+TBL vs. NYR
+                          home      draw      away
+bookie odds:               2.8      4.15       2.2
+calculated odds:          3.55      3.63      2.54
+sharpe ratios:               0    0.0777         0
+put 5.968/94.03 on draw
+Expected return: 0.86
+Risk: 11.1
+
+
+MIN vs. DAL
+                          home      draw      away
+bookie odds:                 2      4.25      3.15
+calculated odds:          1.77      4.66      5.84
+sharpe ratios:           0.129         0         0
+put 18.6/94.03 on home
+Expected return: 2.39
+Risk: 18.5
+
+
+COL vs. STL
+                          home      draw      away
+bookie odds:               1.9      4.25      3.45
+calculated odds:          3.05      4.01      2.68
+sharpe ratios:               0    0.0324     0.172
+put 14.71/94.03 on away
+Expected return: 4.23
+Risk: 24.5
+
+
+EDM vs. LAK
+                          home      draw      away
+bookie odds:              1.93      4.25      3.25
+calculated odds:          2.13      4.22       4.1
+sharpe ratios:               0   0.00419         0
+put 0.33/94.03 on draw
+Expected return: 0.0025
+Risk: 0.596
+
+
+SJS vs. CHI
+                          home      draw      away
+bookie odds:              1.87      4.35      3.45
+calculated odds:          2.02      4.84      4.04
+sharpe ratios:               0         0         0
+put 0/94.03 on away
+Expected return: 0
+Risk: 0
+
+

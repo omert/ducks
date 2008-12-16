@@ -1,0 +1,90 @@
+--------------------------------------
+Summary
+Max budget: 100
+Max risk: 50
+Portfolio size: 90.8
+Portfolio expected return: 11.4
+Portfolio risk: 50
+Portfolio Sharpe ratio: 0.229
+
+
+NJD vs. NYR:  10.62/90.81 on draw
+WSH vs. OTT:  5.453/90.81 on draw
+BUF vs. TOR:  0.5901/90.81 on draw
+ATL vs. BOS:  29.65/90.81 on away
+DAL vs. DET:  15.94/90.81 on away
+COL vs. CHI:  23.62/90.81 on away
+CGY vs. FLA:  4.933/90.81 on away
+
+--------------------------------------
+Detail
+NJD vs. NYR
+                          home      draw      away
+bookie odds:              2.37       4.1       2.7
+calculated odds:          2.25      3.52      3.69
+sharpe ratios:          0.0451    0.0899         0
+put 10.62/90.81 on draw
+Expected return: 1.77
+Risk: 19.7
+
+
+WSH vs. OTT
+                          home      draw      away
+bookie odds:                 2       4.2      3.25
+calculated odds:           2.1      3.87      3.77
+sharpe ratios:               0    0.0459         0
+put 5.453/90.81 on draw
+Expected return: 0.46
+Risk: 10
+
+
+BUF vs. TOR
+                          home      draw      away
+bookie odds:                 2       4.2      3.25
+calculated odds:          2.15      4.16      3.38
+sharpe ratios:               0   0.00485         0
+put 0.5901/90.81 on draw
+Expected return: 0.00513
+Risk: 1.06
+
+
+ATL vs. BOS
+                          home      draw      away
+bookie odds:              3.25      4.15      2.03
+calculated odds:          4.42      4.68      1.78
+sharpe ratios:               0         0     0.137
+put 29.65/90.81 on away
+Expected return: 4.08
+Risk: 29.9
+
+
+DAL vs. DET
+                          home      draw      away
+bookie odds:               3.5      4.15      2.03
+calculated odds:          3.84      4.75      1.89
+sharpe ratios:               0         0    0.0739
+put 15.94/90.81 on away
+Expected return: 1.19
+Risk: 16.1
+
+
+COL vs. CHI
+                          home      draw      away
+bookie odds:               2.6       4.1      2.37
+calculated odds:          3.63      4.19      2.06
+sharpe ratios:               0         0     0.128
+put 23.62/90.81 on away
+Expected return: 3.58
+Risk: 28
+
+
+CGY vs. FLA
+                          home      draw      away
+bookie odds:              1.77       4.3         4
+calculated odds:          2.06      4.05      3.74
+sharpe ratios:               0    0.0327      0.04
+put 4.933/90.81 on away
+Expected return: 0.349
+Risk: 8.74
+
+

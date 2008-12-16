@@ -1,0 +1,35 @@
+--------------------------------------
+Summary
+Max budget: 100
+Max risk: 50
+Portfolio size: 46.3
+Portfolio expected return: 13.6
+Portfolio risk: 50
+Portfolio Sharpe ratio: 0.273
+
+
+OTT vs. TOR:  1.311/46.27 on draw
+VAN vs. CGY:  44.96/46.27 on home
+
+--------------------------------------
+Detail
+OTT vs. TOR
+                          home      draw      away
+bookie odds:              1.95      4.25       3.2
+calculated odds:          2.44      4.15      3.34
+sharpe ratios:               0     0.013         0
+put 1.311/46.27 on draw
+Expected return: 0.031
+Risk: 2.38
+
+
+VAN vs. CGY
+                          home      draw      away
+bookie odds:              2.25       4.2      2.65
+calculated odds:          1.73      4.94      5.93
+sharpe ratios:           0.272         0         0
+put 44.96/46.27 on home
+Expected return: 13.6
+Risk: 49.9
+
+
