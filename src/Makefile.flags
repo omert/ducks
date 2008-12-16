@@ -1,0 +1,6 @@
+cflags = -Wall -g -fno-inline
+#cflags = -Wall -O6 -D TEST_VERSION
+#cflags = -Wall -O6 -g -pg
+#cflags = -Wall -O6 -g 
+#linkflags = -pg
+linkflags =
